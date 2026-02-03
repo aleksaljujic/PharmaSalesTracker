@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|solutionrelative:client\\usercontrols\\ucdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|c:\\users\\aleks\\projsof project\\sistemzapracenjeprodajelekova\\client\\usercontrols\\ucdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\client\\usercontrols\\ucdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|solutionrelative:client\\usercontrols\\ucdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{32A2DEA2-F944-4D5E-BF59-5B0213F8285A}|Server\\Server.csproj|solutionrelative:server\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|c:\\users\\aleks\\projsof project\\sistemzapracenjeprodajelekova\\client\\usercontrols\\uckupac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\client\\usercontrols\\uckupac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|solutionrelative:client\\usercontrols\\uckupac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -55,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|solutionrelative:client\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|c:\\users\\aleks\\projsof project\\sistemzapracenjeprodajelekova\\client\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\client\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{33704F2F-AACE-4A40-A276-6EE1B9162980}|Client\\Client.csproj|solutionrelative:client\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -177,8 +177,7 @@
               "RelativeToolTip": "Server\\Test.cs",
               "ViewState": "AgIAADMBAAAAAAAAAAAAAEQBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T13:08:04.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T13:08:04.542Z"
             },
             {
               "$type": "Document",
@@ -190,8 +189,7 @@
               "RelativeToolTip": "Common\\Domain\\IEntity.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T01:13:35.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T01:13:35.825Z"
             },
             {
               "$type": "Document",
@@ -203,8 +201,7 @@
               "RelativeToolTip": "Client\\GUIController\\KupacController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAWwC0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T02:49:48.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T02:49:48.18Z"
             },
             {
               "$type": "Document",
@@ -215,8 +212,7 @@
               "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Client\\UserControls\\UCKupac.cs [Design]",
               "RelativeToolTip": "Client\\UserControls\\UCKupac.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T00:34:26.321Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-03T00:34:26.321Z"
             },
             {
               "$type": "Document",
@@ -228,8 +224,7 @@
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAkwCgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T22:12:50.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T22:12:50.866Z"
             },
             {
               "$type": "Document",
@@ -240,8 +235,7 @@
               "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Client\\UserControls\\UCDashboard.cs [Design]",
               "RelativeToolTip": "Client\\UserControls\\UCDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:10:22.709Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-02T23:10:22.709Z"
             },
             {
               "$type": "Document",
@@ -253,8 +247,7 @@
               "RelativeToolTip": "Client\\UserControls\\UCDashboard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:02:23.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:02:23.643Z"
             },
             {
               "$type": "Document",
@@ -266,8 +259,7 @@
               "RelativeToolTip": "Client\\Forms\\FrmMain.Designer.cs",
               "ViewState": "AgIAAJAAAAAAAAAAAAAjwJIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T22:51:59.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T22:51:59.871Z"
             },
             {
               "$type": "Document",
@@ -279,8 +271,7 @@
               "RelativeToolTip": "Server\\Controller.cs",
               "ViewState": "AgIAAJIAAAAAAAAAAAAuwJkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T22:05:24.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T22:05:24.216Z"
             },
             {
               "$type": "Document",
@@ -292,8 +283,7 @@
               "RelativeToolTip": "Common\\Extensions\\DataReaderExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T01:13:24.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T01:13:24.434Z"
             },
             {
               "$type": "Document",
@@ -305,8 +295,7 @@
               "RelativeToolTip": "Test1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T03:29:44.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T03:29:44.661Z"
             },
             {
               "$type": "Document",
@@ -318,8 +307,7 @@
               "RelativeToolTip": "Common\\Communication\\JsonNetworkSerializer.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAcwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T01:45:13.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T01:45:13.425Z"
             },
             {
               "$type": "Document",
@@ -331,8 +319,7 @@
               "RelativeToolTip": "Server\\SystemOperation\\SystemOperationBase.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:45:55.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:45:55.364Z"
             },
             {
               "$type": "Document",
@@ -344,8 +331,7 @@
               "RelativeToolTip": "Server\\SystemOperation\\ApotekarSO\\LoginApotekarSO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:42:56.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:42:56.174Z"
             },
             {
               "$type": "Document",
@@ -357,8 +343,7 @@
               "RelativeToolTip": "DBBrokerr\\Broker.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAwwF4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:35:39.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:35:39.03Z"
             },
             {
               "$type": "Document",
@@ -370,8 +355,7 @@
               "RelativeToolTip": "Client\\GUIController\\MainCoordinator.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAkwDcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:04:21.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:04:21.979Z"
             },
             {
               "$type": "Document",
@@ -383,8 +367,7 @@
               "RelativeToolTip": "Server\\SystemOperation\\Smena\\PrikaziSmeneSO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T22:05:54.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T22:05:54.711Z"
             },
             {
               "$type": "Document",
@@ -396,8 +379,7 @@
               "RelativeToolTip": "Common\\Domain\\Apotekar.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAjwCEAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T00:44:21.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T00:44:21.738Z"
             },
             {
               "$type": "Document",
@@ -409,8 +391,7 @@
               "RelativeToolTip": "Common\\Domain\\ApotekarSmena.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAuwBYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:38:57.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T23:38:57.746Z"
             }
           ]
         },
@@ -418,19 +399,6 @@
           "DockedWidth": 29,
           "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DodajKupcaSO.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
-              "RelativeDocumentMoniker": "Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
-              "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
-              "RelativeToolTip": "Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T03:15:52.03Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 12,
@@ -446,6 +414,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DodajKupcaSO.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
+              "RelativeDocumentMoniker": "Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
+              "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
+              "RelativeToolTip": "Server\\SystemOperation\\KupacSO\\DodajKupcaSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T03:15:52.03Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "FrmMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Client\\Forms\\FrmMain.cs",
@@ -453,8 +433,7 @@
               "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Client\\Forms\\FrmMain.cs [Design]",
               "RelativeToolTip": "Client\\Forms\\FrmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T00:36:26.24Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-03T00:36:26.24Z"
             },
             {
               "$type": "Document",
@@ -478,8 +457,7 @@
               "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Client\\Forms\\FrmLogin.cs [Design]",
               "RelativeToolTip": "Client\\Forms\\FrmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T13:15:08.914Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-28T13:15:08.914Z"
             },
             {
               "$type": "Document",
@@ -503,8 +481,7 @@
               "ToolTip": "C:\\Users\\aleks\\ProjSof project\\SistemZaPracenjeProdajeLekova\\Server\\FrmServer.cs [Design]",
               "RelativeToolTip": "Server\\FrmServer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T13:13:56.438Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-28T13:13:56.438Z"
             }
           ]
         }

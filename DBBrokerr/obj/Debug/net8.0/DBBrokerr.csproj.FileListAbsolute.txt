@@ -1,0 +1,15 @@
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\bin\Debug\net8.0\DBBrokerr.deps.json
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\bin\Debug\net8.0\DBBrokerr.dll
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\bin\Debug\net8.0\DBBrokerr.pdb
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\bin\Debug\net8.0\Common.dll
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\bin\Debug\net8.0\Common.pdb
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.csproj.AssemblyReference.cache
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.AssemblyInfoInputs.cache
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.AssemblyInfo.cs
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.csproj.CoreCompileInputs.cache
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.csproj.Up2Date
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.dll
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\refint\DBBrokerr.dll
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.pdb
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\ref\DBBrokerr.dll

@@ -1,0 +1,102 @@
+﻿namespace Client.UserControls
+{
+    partial class UCDashboard
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblDobrodosli = new Label();
+            dgvSmena = new DataGridView();
+            colDatum = new DataGridViewTextBoxColumn();
+            colSmena = new DataGridViewTextBoxColumn();
+            btnPrijaviSmenu = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvSmena).BeginInit();
+            SuspendLayout();
+            // 
+            // lblDobrodosli
+            // 
+            lblDobrodosli.AutoSize = true;
+            lblDobrodosli.Location = new Point(118, 31);
+            lblDobrodosli.Name = "lblDobrodosli";
+            lblDobrodosli.Size = new Size(38, 15);
+            lblDobrodosli.TabIndex = 0;
+            lblDobrodosli.Text = "label1";
+            lblDobrodosli.Click += lblDobrodosli_Click;
+            // 
+            // dgvSmena
+            // 
+            dgvSmena.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSmena.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvSmena.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSmena.Columns.AddRange(new DataGridViewColumn[] { colDatum, colSmena });
+            dgvSmena.Location = new Point(109, 74);
+            dgvSmena.Name = "dgvSmena";
+            dgvSmena.Size = new Size(589, 299);
+            dgvSmena.TabIndex = 1;
+            // 
+            // colDatum
+            // 
+            colDatum.HeaderText = "Datum";
+            colDatum.Name = "colDatum";
+            // 
+            // colSmena
+            // 
+            colSmena.HeaderText = "Smena";
+            colSmena.Name = "colSmena";
+            // 
+            // btnPrijaviSmenu
+            // 
+            btnPrijaviSmenu.Location = new Point(109, 389);
+            btnPrijaviSmenu.Name = "btnPrijaviSmenu";
+            btnPrijaviSmenu.Size = new Size(102, 33);
+            btnPrijaviSmenu.TabIndex = 2;
+            btnPrijaviSmenu.Text = "Prijavi Smenu";
+            btnPrijaviSmenu.UseVisualStyleBackColor = true;
+            btnPrijaviSmenu.Click += btnPrijaviSmenu_Click;
+            // 
+            // UCDashboard
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnPrijaviSmenu);
+            Controls.Add(dgvSmena);
+            Controls.Add(lblDobrodosli);
+            Name = "UCDashboard";
+            Size = new Size(756, 447);
+            ((System.ComponentModel.ISupportInitialize)dgvSmena).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblDobrodosli;
+        private DataGridView dgvSmena;
+        private DataGridViewTextBoxColumn colDatum;
+        private DataGridViewTextBoxColumn colSmena;
+        private Button btnPrijaviSmenu;
+    }
+}

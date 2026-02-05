@@ -85,7 +85,7 @@
             Controls.Add(dgvSmena);
             Controls.Add(lblDobrodosli);
             Name = "UCDashboard";
-            Size = new Size(756, 447);
+            Size = new Size(804, 466);
             ((System.ComponentModel.ISupportInitialize)dgvSmena).EndInit();
             ResumeLayout(false);
             PerformLayout();

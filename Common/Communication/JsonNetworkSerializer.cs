@@ -77,6 +77,35 @@ namespace Common.Communication
             }
         }
 
+        public T ReadValueType<T>(object data) where T : struct
+        {
+            try
+            {
+                if (data == null)
+                {
+                    return default(T);
+                }
+
+                if (data is JsonElement jsonElement)
+                {
+                    string json = jsonElement.GetRawText();
+                    return JsonSerializer.Deserialize<T>(json);
+                }
+
+                // Direktna konverzija ako je već pravi tip
+                if (data is T directValue)
+                {
+                    return directValue;
+                }
+
+                return JsonSerializer.Deserialize<T>(data.ToString());
+            }
+            catch (JsonException ex)
+            {
+                throw new Exception("Greška pri konverziji podataka: " + ex.Message, ex);
+            }
+        }
+
         public void Close()
         {
             try

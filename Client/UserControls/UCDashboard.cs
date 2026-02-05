@@ -22,6 +22,8 @@ namespace Client.UserControls
             lblDobrodosli.Text = $"Dobrodošli, {apotekar.Ime} {apotekar.Prezime}!";
 
             SmeneController.Instance.GetApotekarSmenaList();
+            ApotekarController.Instance.GetApotekare();
+
             FillTable();
         }
 

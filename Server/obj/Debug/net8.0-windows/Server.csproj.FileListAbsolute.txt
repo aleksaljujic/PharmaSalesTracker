@@ -68,3 +68,4 @@ C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Server\obj\Debug\ne
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Server\obj\Debug\net8.0-windows\ref\Server.dll
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Server\obj\Debug\net8.0-windows\Server.FrmServer.resources
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Server\obj\Debug\net8.0-windows\Server.sourcelink.json

@@ -13,6 +13,16 @@ namespace Common.Communication
         PrikaziSmenuZaApotekara,
         DodajSmenuZaApotekara,
         PrikaziKupce,
-        DodajKupca
+        DodajKupca,
+        UkloniKupca,
+        IzmeniKupca,
+        PrikaziApotekare,
+        PrikaziGradove,
+        PrikaziLekove,
+        PrikaziRacune,
+        PrikaziStavkeRacuna,
+        PrikaziRacun,
+        PrikaziLek,
+        VratiLekID
     }
 }

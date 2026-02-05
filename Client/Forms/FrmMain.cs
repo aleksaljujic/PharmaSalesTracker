@@ -57,5 +57,10 @@ namespace Client.Forms
         {
             LoadUserControl(new UCDashboard());
         }
+
+        private void računiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UCPrikazRacuna());
+        }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\refint\DBBrokerr.dll
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.pdb
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\ref\DBBrokerr.dll
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\DBBrokerr\obj\Debug\net8.0\DBBrokerr.sourcelink.json

@@ -70,6 +70,13 @@ namespace Client
             return serializer.ReadType<T>(data);
         }
 
+        public T ReadValue<T>(object data) where T : struct
+        {
+            if (data == null)
+                return default(T);
+            return serializer.ReadValueType<T>(data);
+        }
+
         /// Zatvara konekciju sa serverom
         public void Disconnect()
         {
@@ -134,6 +141,106 @@ namespace Client
             {
                 Operation = Operation.DodajKupca,
                 Argument = kupac
+            };
+            return SendRequest(request);
+        }
+
+        public Response UkloniKupca(int idKupac)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.UkloniKupca,
+                Argument = idKupac
+            };
+            return SendRequest(request);
+        }
+
+        public Response IzmeniKupca(Kupac kupac)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.IzmeniKupca,
+                Argument = kupac
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziApotekare()
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziApotekare,
+                Argument = null
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziGradove()
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziGradove,
+                Argument = null
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziLekove()
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziLekove,
+                Argument = null
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziRacune()
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziRacune,
+                Argument = null
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziStavkeRacuna(int idRacun)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziStavkeRacuna,
+                Argument = idRacun
+            };
+            return SendRequest(request);
+        }
+
+        internal Response PrikaziRacun(int idRacun)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziRacun,
+                Argument = idRacun
+            };
+            return SendRequest(request);
+        }
+
+        public Response PrikaziLek(int idLek)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.PrikaziLek,
+                Argument = idLek
+            };
+            return SendRequest(request);
+        }
+
+        public Response VratiLekId(int idRacun, int idStavkaRacuna)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.VratiLekID,
+                Argument = new { IdRacun = idRacun, IdStavkaRacuna = idStavkaRacuna }
             };
             return SendRequest(request);
         }

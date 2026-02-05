@@ -139,3 +139,6 @@ C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\bin\Debug\ne
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.Forms.FrmMain.resources
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.UserControls.UCDashboard.resources
 C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.UserControls.UCKupac.resources
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.sourcelink.json
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.UserControls.UCKreirajRacun.resources
+C:\Users\aleks\ProjSof project\SistemZaPracenjeProdajeLekova\Client\obj\Debug\net8.0-windows\Client.UserControls.UCPrikazRacuna.resources

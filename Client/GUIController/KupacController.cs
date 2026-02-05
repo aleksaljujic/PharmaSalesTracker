@@ -45,5 +45,15 @@ namespace Client.GUIController
         {
             Response response = Communication.Instance.DodajKupca(kupac);
         }
+
+        public void UkloniKupca(int idKupca)
+        {
+            Response response = Communication.Instance.UkloniKupca(idKupca);
+        }
+
+        public void IzmeniKupca(Kupac kupac)
+        {
+            Response response = Communication.Instance.IzmeniKupca(kupac);
+        }
     }
 }

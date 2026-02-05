@@ -47,7 +47,7 @@ namespace Common.Domain
             : null;
 
         public string? SelectClaues => UseJoin
-            ? "k.idKupac, k.ime, k.prezime, k.email, k.adresa, k.brojTelefona, g.naziv"
+            ? "k.idKupac, k.ime, k.prezime, k.email, k.adresa, k.brojTelefona, k.idLokacija, g.naziv"
             : null;
 
         public string DisplayValue => $"{Ime} {Prezime} ({BrojTelefona}) {NazivLokacije}";
@@ -73,7 +73,8 @@ namespace Common.Domain
                     Prezime = (string)reader["prezime"],
                     Email = (string)reader["email"],
                     Adresa = (string)reader["adresa"],
-                    BrojTelefona = (string)reader["brojTelefona"]
+                    BrojTelefona = (string)reader["brojTelefona"],
+                    IdLokacija = (int)reader["idLokacija"]
                 };
 
                 if(reader.HasColumn("Ime"))

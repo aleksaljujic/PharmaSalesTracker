@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
+            početnaToolStripMenuItem = new ToolStripMenuItem();
             računiToolStripMenuItem = new ToolStripMenuItem();
             lekoviToolStripMenuItem = new ToolStripMenuItem();
             kupciToolStripMenuItem = new ToolStripMenuItem();
@@ -38,7 +39,6 @@
             statusStrip1 = new StatusStrip();
             footer = new ToolStripStatusLabel();
             panelMain = new Panel();
-            početnaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -53,11 +53,19 @@
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
+            // početnaToolStripMenuItem
+            // 
+            početnaToolStripMenuItem.Name = "početnaToolStripMenuItem";
+            početnaToolStripMenuItem.Size = new Size(62, 20);
+            početnaToolStripMenuItem.Text = "Početna";
+            početnaToolStripMenuItem.Click += početnaToolStripMenuItem_Click;
+            // 
             // računiToolStripMenuItem
             // 
             računiToolStripMenuItem.Name = "računiToolStripMenuItem";
             računiToolStripMenuItem.Size = new Size(55, 20);
             računiToolStripMenuItem.Text = "Računi";
+            računiToolStripMenuItem.Click += računiToolStripMenuItem_Click;
             // 
             // lekoviToolStripMenuItem
             // 
@@ -115,13 +123,6 @@
             panelMain.Size = new Size(800, 404);
             panelMain.TabIndex = 6;
             // 
-            // početnaToolStripMenuItem
-            // 
-            početnaToolStripMenuItem.Name = "početnaToolStripMenuItem";
-            početnaToolStripMenuItem.Size = new Size(62, 20);
-            početnaToolStripMenuItem.Text = "Početna";
-            početnaToolStripMenuItem.Click += početnaToolStripMenuItem_Click;
-            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -133,6 +134,7 @@
             MainMenuStrip = menuStrip1;
             Name = "FrmMain";
             Text = "Main";
+            WindowState = FormWindowState.Maximized;
             Load += FrmMain_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

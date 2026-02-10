@@ -87,6 +87,7 @@
             label13 = new Label();
             tbNazivLeka = new TextBox();
             label12 = new Label();
+            btnKreirajRacun = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvRacuni).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvStavkeRacuna).BeginInit();
             groupBox1.SuspendLayout();
@@ -101,7 +102,7 @@
             dgvRacuni.Columns.AddRange(new DataGridViewColumn[] { colIdRacun, colOpis });
             dgvRacuni.Location = new Point(49, 96);
             dgvRacuni.Name = "dgvRacuni";
-            dgvRacuni.Size = new Size(397, 629);
+            dgvRacuni.Size = new Size(397, 568);
             dgvRacuni.TabIndex = 0;
             dgvRacuni.CellContentClick += dgvRacuni_CellContentClick;
             dgvRacuni.SelectionChanged += dgvRacuni_SelectionChanged;
@@ -620,10 +621,20 @@
             label12.TabIndex = 14;
             label12.Text = "Naziv";
             // 
+            // btnKreirajRacun
+            // 
+            btnKreirajRacun.Location = new Point(172, 684);
+            btnKreirajRacun.Name = "btnKreirajRacun";
+            btnKreirajRacun.Size = new Size(126, 34);
+            btnKreirajRacun.TabIndex = 18;
+            btnKreirajRacun.Text = "Kreiraj Račun";
+            btnKreirajRacun.UseVisualStyleBackColor = true;
+            // 
             // UCPrikazRacuna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnKreirajRacun);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
@@ -703,5 +714,6 @@
         private Label label14;
         private TextBox tbProizvodjacLeka;
         private Label label13;
+        private Button btnKreirajRacun;
     }
 }

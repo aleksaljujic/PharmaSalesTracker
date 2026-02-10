@@ -41,5 +41,18 @@ namespace Client.GUIController
                 throw new Exception(response.ExceptionMessage);
             }
         }
+
+        public void KreirajStavkuRacuna(StavkaRacuna stavka)
+        {
+            Response response = Communication.Instance.KreirajStavkuRacuna(stavka);
+            if (response.IsSuccess)
+            {
+                MessageBox.Show("Uspešno kreirana stavka računa!", "Uspeh");
+            }
+            else
+            {
+                MessageBox.Show(response.ExceptionMessage, "Greška");
+            }
+        }
     }
 }

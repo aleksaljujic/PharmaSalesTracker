@@ -39,6 +39,7 @@
             statusStrip1 = new StatusStrip();
             footer = new ToolStripStatusLabel();
             panelMain = new Panel();
+            kreirajRačunToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // računiToolStripMenuItem
             // 
+            računiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { kreirajRačunToolStripMenuItem });
             računiToolStripMenuItem.Name = "računiToolStripMenuItem";
             računiToolStripMenuItem.Size = new Size(55, 20);
             računiToolStripMenuItem.Text = "Računi";
@@ -123,6 +125,13 @@
             panelMain.Size = new Size(800, 404);
             panelMain.TabIndex = 6;
             // 
+            // kreirajRačunToolStripMenuItem
+            // 
+            kreirajRačunToolStripMenuItem.Name = "kreirajRačunToolStripMenuItem";
+            kreirajRačunToolStripMenuItem.Size = new Size(180, 22);
+            kreirajRačunToolStripMenuItem.Text = "Kreiraj račun";
+            kreirajRačunToolStripMenuItem.Click += kreirajRačunToolStripMenuItem_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -161,5 +170,6 @@
         private Panel panelMain;
         private ToolStripMenuItem odjaviSeToolStripMenuItem;
         private ToolStripMenuItem početnaToolStripMenuItem;
+        private ToolStripMenuItem kreirajRačunToolStripMenuItem;
     }
 }

@@ -62,5 +62,10 @@ namespace Client.Forms
         {
             LoadUserControl(new UCPrikazRacuna());
         }
+
+        private void kreirajRačunToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UCKreirajRacun());
+        }
     }
 }

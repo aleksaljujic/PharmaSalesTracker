@@ -58,5 +58,19 @@ namespace Client.GUIController
                 throw new Exception(response.ExceptionMessage);
             }
         }
+
+        public void KreirajRacun(Racun racun)
+        {
+            Response response = Communication.Instance.KreirajRacun(racun);
+            if (response.IsSuccess)
+            {
+                MessageBox.Show("Uspešno kreiran račun!", "Uspeh");
+                GetRacune();
+            }
+            else
+            {
+                MessageBox.Show(response.ExceptionMessage, "Greška");
+            }
+        }
     }
 }

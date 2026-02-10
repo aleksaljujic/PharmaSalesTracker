@@ -845,5 +845,204 @@ namespace Server
             }
         }
 
+        public void TestKreirajRacun()
+        {
+            client = new TcpClient("127.0.0.1", 9999);
+            NetworkStream stream = client.GetStream();
+
+            if (client == null || !client.Connected)
+            {
+                Console.WriteLine("✘ Greška: Klijent nije povezan!");
+                return;
+            }
+
+            serializer = new JsonNetworkSerializer(client.Client);
+
+            // PRVO: Dobavi listu računa da vidiš koliko ih ima
+            Request requestLista = new Request
+            {
+                Operation = Operation.PrikaziRacune,
+                Argument = null
+            };
+
+            int brojRacuna = 0;
+            try
+            {
+                serializer.Send(requestLista);
+                Response responseLista = serializer.Receive<Response>();
+
+                if (responseLista.IsSuccess && responseLista.Result != null)
+                {
+                    List<Racun> racuni = serializer.ReadType<List<Racun>>(responseLista.Result);
+                    brojRacuna = racuni.Count + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"⚠️ Upozorenje: Nisam mogao da dobijem broj računa: {ex.Message}");
+                brojRacuna = 1; // Default
+            }
+
+            string generisanBroj = $"RAC-{DateTime.Now.Year}-{brojRacuna:D5}";
+            Console.WriteLine($"📝 Generiše se broj računa: {generisanBroj}\n");
+
+            Console.WriteLine("--- KREIRANJE RAČUNA ---");
+
+            Console.Write(" Rok plaćanja (dd.MM.yyyy) [Enter za preskok]: ");
+            string rokStr = Console.ReadLine();
+            DateTime? rokPlacanja = null;
+            if (!string.IsNullOrWhiteSpace(rokStr))
+            {
+                rokPlacanja = DateTime.ParseExact(rokStr, "dd.MM.yyyy", null);
+            }
+
+            Console.Write(" PDV (%) [Enter za preskok]: ");
+            string pdvStr = Console.ReadLine();
+            float? pdv = null;
+            if (!string.IsNullOrWhiteSpace(pdvStr))
+            {
+                pdv = float.Parse(pdvStr);
+            }
+
+            //Console.Write(" Ukupan iznos: ");
+            //float ukupanIznos = float.Parse(Console.ReadLine());
+
+            Console.Write(" ID Apotekar [Enter za preskok]: ");
+            string apotekarStr = Console.ReadLine();
+            int? idApotekar = null;
+            if (!string.IsNullOrWhiteSpace(apotekarStr))
+            {
+                idApotekar = int.Parse(apotekarStr);
+            }
+
+            Console.Write(" ID Kupac [Enter za preskok]: ");
+            string kupacStr = Console.ReadLine();
+            int? idKupac = null;
+            if (!string.IsNullOrWhiteSpace(kupacStr))
+            {
+                idKupac = int.Parse(kupacStr);
+            }
+
+            Console.Write(" Način plaćanja: ");
+            string nacinPlacanja = Console.ReadLine();
+
+            Console.Write(" Status računa: ");
+            string statusRacuna = Console.ReadLine();
+
+            Console.Write(" Napomena [Enter za preskok]: ");
+            string napomena = Console.ReadLine();
+
+            var racunData = new
+            {
+                RokPlacanja = rokPlacanja,
+                Pdv = pdv,
+                IdApotekar = idApotekar,
+                IdKupac = idKupac,
+                NacinPlacanja = nacinPlacanja,
+                StatusRacuna = statusRacuna,
+                Napomena = napomena,
+                BrojRacuna = generisanBroj  // Koristi generisani broj
+            };
+
+            Request request = new Request
+            {
+                Operation = Operation.KreirajRacun,
+                Argument = racunData
+            };
+
+            try
+            {
+                serializer.Send(request);
+                Console.WriteLine("  ⏳ Zahtev poslat, čekam odgovor...");
+
+                Response response = serializer.Receive<Response>();
+
+                if (response.IsSuccess)
+                {
+                    Console.WriteLine($"✅ USPEH: Račun '{generisanBroj}' uspešno kreiran!");
+                }
+                else
+                {
+                    Console.WriteLine($"❌ NEUSPEH: {response.ExceptionMessage}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"✘ Greška u komunikaciji: {ex.Message}");
+            }
+        }
+
+        public void TestKreirajStavkuRacuna()
+        {
+            client = new TcpClient("127.0.0.1", 9999);
+            NetworkStream stream = client.GetStream();
+
+            if (client == null || !client.Connected)
+            {
+                Console.WriteLine("✘ Greška: Klijent nije povezan!");
+                return;
+            }
+
+            Console.WriteLine("\n--- KREIRANJE STAVKE RAČUNA ---");
+
+            Console.Write(" ID Računa: ");
+            int idRacuna = int.Parse(Console.ReadLine());
+
+            Console.Write(" ID Leka: ");
+            int idLek = int.Parse(Console.ReadLine());
+
+
+            Console.Write(" Količina: ");
+            int kolicina = int.Parse(Console.ReadLine());
+
+            Console.Write(" Popust (%) [Enter za preskok]: ");
+            string popustStr = Console.ReadLine();
+            float? popustProcenat = null;
+            if (!string.IsNullOrWhiteSpace(popustStr))
+            {
+                popustProcenat = float.Parse(popustStr);
+            }
+
+            StavkaRacuna stavka = new StavkaRacuna
+            {
+                IdRacun = idRacuna,
+                IdLek = idLek,
+                Kolicina = kolicina,
+                PopustProcenat = popustProcenat
+            };
+
+            serializer = new JsonNetworkSerializer(client.Client);
+
+            Request request = new Request
+            {
+                Operation = Operation.KreirajStavkuRacuna,
+                Argument = stavka
+            };
+
+            try
+            {
+                // Šaljemo zahtev serveru
+                serializer.Send(request);
+                Console.WriteLine("  ⏳ Zahtev poslat, čekam odgovor...");
+
+                // Čekamo odgovor
+                Response response = serializer.Receive<Response>();
+
+                // Obrada odgovora
+                if (response.IsSuccess)
+                {
+                    Console.WriteLine($"✅ USPEH: Stavka uspešno dodata na račun!");
+                }
+                else
+                {
+                    Console.WriteLine($"❌ NEUSPEH: {response.ExceptionMessage}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"✘ Greška u komunikaciji: {ex.Message}");
+            }
+        }
+
     }
 }

@@ -55,12 +55,12 @@ namespace Client.UserControls
             foreach (var s in stavkeRacuna)
             {
                 dgvStavkeRacuna.Rows.Add(s.Rb, s.LekDisplayValue, s.Kolicina, s.Iznos, s.PopustProcenat, s.KonacnaCena);
-            }     
+            }
         }
 
         private void dgvStavkeRacuna_SelectionChanged(object sender, EventArgs e)
         {
-            if(dgvStavkeRacuna.SelectedRows.Count == 0)
+            if (dgvStavkeRacuna.SelectedRows.Count == 0)
             {
                 return;
             }

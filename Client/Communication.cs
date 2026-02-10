@@ -244,5 +244,25 @@ namespace Client
             };
             return SendRequest(request);
         }
+
+        public Response KreirajRacun(Racun racun)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.KreirajRacun,
+                Argument = racun
+            };
+            return SendRequest(request);
+        }
+
+        public Response KreirajStavkuRacuna(StavkaRacuna stavka)
+        {
+            Request request = new Request
+            {
+                Operation = Operation.KreirajStavkuRacuna,
+                Argument = stavka
+            };
+            return SendRequest(request);
+        }
     }
 }

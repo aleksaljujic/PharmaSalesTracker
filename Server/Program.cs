@@ -23,6 +23,8 @@ namespace Server
             //PrikaziLekove();
             //PrikaziRacune();
             //PrikaziStavkeRacuna();
+            //KreirajRacun();
+            //KreirajStavkuRacuna();
 
             // PRIKAZ FORME:
             Application.EnableVisualStyles();
@@ -82,6 +84,26 @@ namespace Server
             Test test = new Test();
             test.PokretanjeServera();
             test.TestPrikaziStavkeRacuna();
+            test.ZaustavljanjeServera();
+        }
+
+        public static void KreirajRacun()
+        {
+            Test test = new Test();
+            test.PokretanjeServera();
+            test.TestPrikaziRacune();
+            test.TestKreirajRacun();
+            test.TestPrikaziRacune();
+            test.ZaustavljanjeServera();
+        }
+
+        public static void KreirajStavkuRacuna()
+        {
+            Test test = new Test();
+            test.PokretanjeServera();
+            test.TestPrikaziStavkeRacuna(11);
+            test.TestKreirajStavkuRacuna();
+            test.TestPrikaziStavkeRacuna(11);
             test.ZaustavljanjeServera();
         }
     }

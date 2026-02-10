@@ -71,6 +71,12 @@ namespace Server
                     case Operation.VratiLekID:
                         response = VratiLekID(request);
                         break;
+                    case Operation.KreirajRacun:
+                        response = KreirajRacun(request);
+                        break;
+                    case Operation.KreirajStavkuRacuna:
+                        response = KreirajStavkuRacuna(request);
+                        break;
                     default:
                         response.ExceptionMessage = "Nepoznata operacija";
                         response.ExceptionType = "InvalidOperationException";
@@ -442,6 +448,44 @@ namespace Server
                     response.ExceptionMessage = "Lek nije pronađen.";
                     response.ExceptionType = "NotFoundException";
                 }
+            }
+            catch (Exception ex)
+            {
+                response.ExceptionMessage = ex.Message;
+                response.ExceptionType = ex.GetType().Name;
+            }
+            return response;
+        }
+
+        private Response KreirajRacun(Request request)
+        {
+            Response response = new Response();
+            try
+            {
+                JsonElement jsonElement = (JsonElement)request.Argument;
+                Racun racun = JsonSerializer.Deserialize<Racun>(jsonElement.GetRawText());
+                KreirajRacunSO so = new KreirajRacunSO(racun);
+                so.Execute();
+                response.Result = "Račun uspešno kreiran.";
+            }
+            catch (Exception ex)
+            {
+                response.ExceptionMessage = ex.Message;
+                response.ExceptionType = ex.GetType().Name;
+            }
+            return response;
+        }
+
+        private Response KreirajStavkuRacuna(Request request)
+        {
+            Response response = new Response();
+            try
+            {
+                JsonElement jsonElement = (JsonElement)request.Argument;
+                StavkaRacuna stavkaRacuna = JsonSerializer.Deserialize<StavkaRacuna>(jsonElement.GetRawText());
+                KreirajStavkuRacunaSO so = new KreirajStavkuRacunaSO(stavkaRacuna);
+                so.Execute();
+                response.Result = "Stavka računa uspešno kreirana.";
             }
             catch (Exception ex)
             {

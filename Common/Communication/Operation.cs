@@ -23,6 +23,8 @@ namespace Common.Communication
         PrikaziStavkeRacuna,
         PrikaziRacun,
         PrikaziLek,
-        VratiLekID
+        VratiLekID,
+        KreirajStavkuRacuna,
+        KreirajRacun
     }
 }

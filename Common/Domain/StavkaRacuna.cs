@@ -23,7 +23,7 @@ namespace Common.Domain
 
         // JOIN PODACI - Lek
         public string NazivLeka { get; set; }
-        public float? CenaLeka { get; set; }
+        public float CenaLeka { get; set; }
         public string Pakovanje { get; set; }
         public string JacinaLeka { get; set; }
         public string ProizvodjacLeka { get; set; }
